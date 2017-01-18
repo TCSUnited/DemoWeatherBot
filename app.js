@@ -24,7 +24,7 @@ bot.endConversationAction('goodbye', 'Goodbye :)', { matches: /^goodbye/i });
 bot.beginDialogAction('hi', '/', { matches: /^hi/i });
 // You can provide your own model by specifing the 'LUIS_MODEL_URL' environment variable
 // This Url can be obtained by uploading or creating your model from the LUIS portal: https://www.luis.ai/
-const LuisModelUrl = process.env.LUIS_MODEL_URL || 'https://api.projectoxford.ai/luis/v2.0/apps/c413b2ef-382c-45bd-8ff0-f76d60e2a821?subscription-key=3fa570ae50234017b9632b3b7180df43&q=';
+const LuisModelUrl = process.env.LUIS_MODEL_URL || 'https://api.projectoxford.ai/luis/v2.0/apps/c413b2ef-382c-45bd-8ff0-f76d60e2a821?subscription-key=f2b6737c71d048bb99491c9e24d3a7c9&q=';
 // Create LUIS recognizer that points at our model and add it as the root '/' dialog for our Cortana Bot.
 //var model = '
 var recognizer = new builder.LuisRecognizer(LuisModelUrl);
